@@ -17,7 +17,6 @@ int main() {
         a[r[i] + 1]--; // R日目までは参加するので,R+1日目から来なくなる
     }
 
-    cout << "--ここからが出力--\n";
     for(int i = 1; i <= d; i++) { // 0日目は含まれないため
         ans[i] = ans[i - 1] + a[i];
         cout << ans[i] << endl;
