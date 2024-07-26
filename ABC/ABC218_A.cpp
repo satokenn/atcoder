@@ -1,14 +1,15 @@
-// WAであるため改善が必要
 #include <iostream>
 #include <vector>
 using namespace std;
 
 int main() {
-    string s, t;
-    cin >> s >> t;
-
-    int a = s.compare(t);
-    if(a == -1) cout << "Yes\n";
+    int n;
+    cin >> n;
+    vector<char>s(7);
+    for(int i = 0; i < 7; i++) {
+        cin >> s[i];
+    }
+    if(s[n - 1] == 'o') cout << "Yes\n";
     else cout << "No\n";
     return 0;
 }

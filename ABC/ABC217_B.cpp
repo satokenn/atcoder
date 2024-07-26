@@ -1,26 +1,28 @@
 #include <iostream>
 #include <vector>
+#include <string>
 using namespace std;
 
 int main() {
-    int n;
-    cin >> n;
+    vector<string> s(4), str(3);
+    s = {"ABC", "AGC", "ARC", "AHC"};
 
-
-    vector<string> s(n), t(n);
-
-    for(int i = 0; i < n; i++) {
-        cin >> s[i];
+    for(int i = 0; i < 3; i++) {
+        cin >> str[i];
     }
 
-    for(int i = 0; i < n; i++) {
-        for(int j = i + 1; j < n; j++) {
-            if(s[i] == s[j] && t[i] == t[j]) {
-                cout << "Yes\n";
-                return 0;
+    for(int i = 0; i < 4; i++) {
+        for(int j = 0; j < 3; j++) {
+            if(s[i] == str[j]) {
+                s[i] = "";
             }
         }
     }
-    cout << "No\n";
-    return 0;
+
+    for(int i = 0; i < 4; i++) {
+        if(s[i] != "") {
+            cout << s[i] << endl;
+        }
+    }
+
 }
