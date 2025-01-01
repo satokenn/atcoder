@@ -15,11 +15,12 @@ int main() {
     vector<string>ans (h, string(w, '.'));
     for(int i = 0; i < h; i++) { // i は判定範囲の各行のこと
         for(int j = 0; j < w; j++) { // j は判定範囲の各列のこと
-            int x = p + i, y = r + j; // x,y はそれぞれ現在注目しているマスのこと
+            ll x = p + i, y = r + j; // x,y はそれぞれ現在注目しているマスのこと
             if(x-y == a - b || x + y == a + b) ans[i][j] = '#';
         }
     }
     for(int i = 0; i < h; i++) {
         cout << ans[i] << endl;
     }
+    return 0;
 }
