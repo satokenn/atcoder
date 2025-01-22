@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int function(int t) {
+	int x2 = t * t;
+	int 2x = 2 * t;
+	
+	return x2 + 2x + 3;
+}
+
+
+int main() {
+	int t;
+	cin >> t;
+
+	int ft = function(t);
+	int fft = function(ft);
+
+	int fftt = function(ft + t);
+
+	int ans = function(fftt + fft);
+
+	cout << ans << endl;
+}
