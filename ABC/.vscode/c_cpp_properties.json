@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "name" : "Win32",
+            "includePath": [
+                "C:/Users/odinn/ac-library",
+                "C:/Users/odinn/atcoder",
+                "C:/Users/odinn/atcoder/atcoder",
+                "${workspaceFolder}/**"
+            ],
+            "browse": {
+                "path": [
+                    "C:/Users/odinn/ac-library",                    
+                    "C:/Users/odinn",
+                    "C:/Users/odinn/atcoder",
+                    "C:/Users/odinn/atcoder/atcoder"
+                ]
+            }            
+        }
+    ],
+    "version" : 4
+}

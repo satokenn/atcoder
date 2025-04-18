@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <atcoder/all>
 using namespace std;
 
 int main() {
