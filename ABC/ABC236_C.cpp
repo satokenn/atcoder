@@ -20,3 +20,8 @@ int main() {
 	}
 	return 0;
 }
+
+	memset(&hints, 0, sizeof(hints));
+	servaddr.sin_family = AF_UNSPEC; // v4 || v6 どちらでも入る．
+	hints.ai_socktype = SOCK_STREAM;    
+	このコードのプログラムを解説してください．
