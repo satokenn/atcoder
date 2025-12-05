@@ -22,7 +22,7 @@ int main() {
         memo[i] = worm;
         worm = (worm + memo[i] - memo[i - k] + divNum) % divNum;
     }
-    
+
     cout << memo[n] % divNum << endl;
     return 0;
 }
